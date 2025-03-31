@@ -1,4 +1,4 @@
-//Escribir aqui los objetos
+
 object gimenez {
     var fondoDeSueldo = 300000
 
@@ -8,13 +8,8 @@ object gimenez {
   }
     method pagar(empleado) {
         fondoDeSueldo -= empleado.sueldo()
+        empleado.cobrarSueldo()
   }
-    /*
-        PONERLE EL METODO COBRARSUELDO() A AMBOS EMPLEADOS
-        en galvan no hace nada, solo en baigorria
-        De esta manera, es POLIMORFICA la solucion
-        Pensar en el metodo alimentar()
-    */
 }
 
 
@@ -42,7 +37,7 @@ object galvan {
         return deuda
     }
 
-    // G)etter
+    // Getter
     method sueldo() {
         return sueldo
     }

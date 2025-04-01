@@ -29,8 +29,8 @@ object galvan {
     }
 
     method gastar(cantDinero){
-       dinero = if (cantDinero > dinero) { deuda = cantDinero - dinero} 
-                else { dinero -= cantDinero}
+        // CORREGIR
+       dinero = if (cantDinero > dinero) { deuda = cantDinero - dinero} else { dinero -= cantDinero}
     }
 
     method deuda(){
@@ -60,7 +60,11 @@ object baigorria {
     method totalCobrado(){
         return totalCobrado
     }
-    
+
+    method precioDeEmpanada(_precioDeEmpanada) {
+      precioDeEmpanada = _precioDeEmpanada
+    }
+
     method sueldo() {
         return precioDeEmpanada * cantidadDeEmpanadasVendidas
     }
